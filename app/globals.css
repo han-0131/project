@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+
+  --color-canvas: #f8fafc;
+  --color-card: #ffffff;
+  --color-subtle: #f1f5f9;
+  --color-header: #0f172a;
+  --color-line: #e2e8f0;
+  --color-line-strong: #cbd5e1;
+  --color-ink: #0f172a;
+  --color-ink-2: #334155;
+  --color-ink-3: #64748b;
+  --color-action: #2563eb;
+  --color-action-soft: #eff6ff;
+
+  --color-normal-bg: #ecfdf5;
+  --color-normal-line: #a7f3d0;
+  --color-normal-text: #065f46;
+  --color-normal-dot: #059669;
+  --color-caution-bg: #fffbeb;
+  --color-caution-line: #fde68a;
+  --color-caution-text: #92400e;
+  --color-caution-dot: #d97706;
+  --color-alert-bg: #fef2f2;
+  --color-alert-line: #fecaca;
+  --color-alert-text: #991b1b;
+  --color-alert-dot: #dc2626;
+  --color-na-bg: #f1f5f9;
+  --color-na-line: #cbd5e1;
+  --color-na-text: #475569;
+  --color-na-dot: #64748b;
+}
+
+html,
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 14px;
+}
+
+.num {
+  font-feature-settings: "tnum" 1, "cv05" 1;
+  font-variant-numeric: tabular-nums;
+}

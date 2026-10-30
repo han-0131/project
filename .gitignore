@@ -1,0 +1,17 @@
+# 비밀 값 (GitHub에 올리지 않음)
+.env
+.env.local
+.env.*.local
+
+# 설치·빌드 결과
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# 기타
+.DS_Store
+npm-debug.log*
+.vercel

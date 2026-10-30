@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-surface":"#0b1c30","surface-dim":"#cbdbf5","status-inspection-dot":"#DC2626","border-subtle":"#E2E8F0","surface-bright":"#f8f9ff","status-caution-text":"#92400E","status-inspection-bg":"#FEF2F2","on-primary-fixed-variant":"#3f465c","on-error-container":"#93000a","status-na-bg":"#F1F5F9","secondary-fixed-dim":"#b4c5ff","secondary-container":"#316bf3","on-background":"#0b1c30","surface-card":"#FFFFFF","on-secondary-fixed":"#00174b","outline":"#76777d","surface-container-high":"#dce9ff","outline-variant":"#c6c6cd","on-tertiary":"#ffffff","tertiary-container":"#0d1c2f","surface-variant":"#d3e4fe","status-na-dot":"#64748B","surface-header":"#0F172A","status-caution-dot":"#D97706","status-na-border":"#CBD5E1","surface-container":"#e5eeff","on-secondary-fixed-variant":"#003ea8","error":"#ba1a1a","surface-container-low":"#eff4ff","secondary-fixed":"#dbe1ff","surface-canvas":"#F8FAFC","surface-container-highest":"#d3e4fe","background":"#f8f9ff","on-tertiary-fixed":"#0d1c2f","error-container":"#ffdad6","surface-subtle":"#F1F5F9","secondary":"#0051d5","status-inspection-border":"#FECACA","tertiary":"#000000","surface-tint":"#565e74","inverse-on-surface":"#eaf1ff","on-primary-container":"#7c839b","status-normal-bg":"#ECFDF5","primary-fixed-dim":"#bec6e0","primary-container":"#131b2e","on-error":"#ffffff","status-normal-text":"#065F46","inverse-primary":"#bec6e0","status-caution-bg":"#FFFBEB","on-tertiary-fixed-variant":"#3a485c","on-surface-variant":"#45464d","on-secondary-container":"#fefcff","tertiary-fixed-dim":"#b9c7e0","on-secondary":"#ffffff","inverse-surface":"#213145","status-caution-border":"#FDE68A","border-strong":"#CBD5E1","primary":"#000000","surface-container-lowest":"#ffffff","on-primary-fixed":"#131b2e","status-inspection-text":"#991B1B","tertiary-fixed":"#d5e3fd","primary-fixed":"#dae2fd","on-tertiary-container":"#76859b","on-primary":"#ffffff","surface":"#f8f9ff","status-na-text":"#475569","status-normal-dot":"#059669","status-normal-border":"#A7F3D0"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"1.5rem","space-2xs":"0.125rem","space-xl":"1.5rem","space-2xl":"2rem","space-md":"0.75rem","space-sm":"0.5rem","space-lg":"1rem","gutter":"1rem","space-xs":"0.25rem"},"fontFamily":{"label-md":["Inter"],"display-kpi":["Inter"],"label-sm":["Inter"],"body-xs":["Inter"],"table-cell-num":["Inter"],"table-cell-text":["Inter"],"headline-sm":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"headline-lg":["Inter"],"headline-md":["Inter"],"table-header":["Inter"]},"fontSize":{"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"display-kpi":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"body-xs":["12px",{"lineHeight":"16px","fontWeight":"400"}],"table-cell-num":["13px",{"lineHeight":"18px","fontWeight":"500"}],"table-cell-text":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-sm":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"table-header":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface-canvas font-body-sm text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-header text-on-tertiary border-b border-border-strong shadow-[0_1px_4px_rgba(15,23,42,0.08)]"><div class="max-w-[1440px] mx-auto px-margin h-14 flex items-center justify-between"><div class="flex items-center gap-space-2xl"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-surface-card flex items-center justify-center"><span class="material-symbols-outlined text-surface-header text-[20px]">apartment</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-tertiary leading-tight">CS E&amp;C 공무포털</span><span class="font-label-sm text-label-sm text-status-na-border tracking-normal leading-tight">현장 공정·기성 통합관리</span></div></div><div class="h-5 w-[1px] bg-outline/40"></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-surface-card/15 text-on-tertiary font-headline-sm border-b-2 border-secondary-container"><a class="px-space-md py-space-sm font-label-md text-label-md text-status-na-border hover:text-on-tertiary transition-colors" data-path="overview" href="#">현황 요약</a><a class="px-space-md py-space-sm font-label-md text-label-md text-status-na-border hover:text-on-tertiary transition-colors" data-path="site-comparison-table" href="#">현장별 비교표</a><a class="px-space-md py-space-sm font-label-md text-label-md text-status-na-border hover:text-on-tertiary transition-colors" data-path="data-import" href="#">자료 가져오기</a><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-surface-card/15 text-on-tertiary font-headline-sm border-b-2 border-secondary-container" data-path="ai-inquiry" href="#">AI에게 묻기</a></nav></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-card/10 rounded border border-surface-card/15"><span class="material-symbols-outlined text-[15px] text-status-normal-dot">calendar_month</span><span class="font-label-sm text-label-sm text-status-na-border">기준월:</span><span class="font-label-sm text-label-sm text-on-tertiary">2026년 9월 마감</span></div><button class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-card text-surface-header hover:bg-surface-canvas rounded font-label-md text-label-md transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">download</span><span>CSV 내보내기</span></button><div class="h-5 w-[1px] bg-outline/40"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-tertiary leading-none">김수석 관리자</span><span class="font-label-sm text-label-sm text-status-na-border leading-none mt-space-2xs">본사 공무팀</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-14 bg-surface-canvas min-h-screen"><div class="max-w-[1440px] mx-auto px-margin py-space-xl"><div class="flex flex-col w-full">
+<!-- Top Analytical Scope & Ground-Truth Context -->
+<div class="relative w-full overflow-hidden rounded-xl bg-surface-header text-on-tertiary p-space-lg shadow-md mb-space-lg">
+<div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md">
+<div class="flex items-center gap-space-md flex-wrap">
+<div class="flex items-center justify-center w-10 h-10 rounded-lg bg-surface-card/10 text-on-tertiary">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-status-na-border font-label-sm text-label-sm">
+<span>공무 AI 팩트체크 엔진</span>
+<span>/</span>
+<span>데이터 근거 분석 (Grounded Inquiry)</span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-2xs flex-wrap">
+<h2 class="font-headline-md text-headline-md text-on-tertiary tracking-tight">기준 분석 범위: 2026년 9월 마감 | 전체 12개 현장</h2>
+<span class="px-space-sm py-space-2xs rounded bg-surface-card/15 text-on-tertiary font-label-sm text-label-sm">포커스: 현장 D (김포 공동주택)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-card/10 text-status-na-border font-body-xs text-body-xs">
+<span class="material-symbols-outlined text-[16px] text-status-normal-dot">database</span>
+<span>근거 데이터: 144행 중 2026-09 현장 D 레코드 연동 확정</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-secondary-container/20 text-on-tertiary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-normal-dot animate-pulse"></span>
+<span>원천 데이터 일치 검증 100%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Recommended Question Chips -->
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[15px]">tips_and_updates</span>
+        공무팀 다빈도 추천 질의 (클릭 시 원천 검증 데이터 동기화)
+      </span>
+<span class="font-body-xs text-body-xs text-on-surface-variant">원칙: 계산은 프로그램이 수행, AI는 기록된 텍스트와 팩트만을 연결합니다.</span>
+</div>
+<div class="flex items-center gap-space-sm overflow-x-auto pb-space-2xs" id="questionChips">
+<button class="question-chip active flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-header text-on-tertiary font-label-md text-label-md shadow-sm transition-all whitespace-nowrap" data-question-id="d-cause" type="button">
+<span class="material-symbols-outlined text-[16px] text-status-caution-dot">check_circle</span>
+<span>D가 늦어진 원인과 대응은?</span>
+</button>
+<button class="question-chip flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-card text-on-surface hover:bg-surface-subtle font-label-md text-label-md shadow-sm transition-all whitespace-nowrap" data-question-id="sep-priority" type="button">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">sort</span>
+<span>9월에 점검이 필요한 현장 순위와 이유는?</span>
+</button>
+<button class="question-chip flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-card text-on-surface hover:bg-surface-subtle font-label-md text-label-md shadow-sm transition-all whitespace-nowrap" data-question-id="unrecorded-data" type="button">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">search_off</span>
+<span>실제 준공일과 미수금 현황은 어떻게 되나요?</span>
+</button>
+<button class="question-chip flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-card text-on-surface hover:bg-surface-subtle font-label-md text-label-md shadow-sm transition-all whitespace-nowrap" data-question-id="caution-sites" type="button">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">warning</span>
+<span>주의 현장 3곳의 주요 지연 공종은?</span>
+</button>
+</div>
+</div>
+<!-- Main Analysis Canvas (Bento Split Layout) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Left: Inquiry & Verification Stream (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Active Question Strip -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-full bg-secondary-container/15 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">person</span>
+</div>
+<div class="flex flex-col w-full">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">본사 공무팀 질의</span>
+<span class="font-body-xs text-body-xs text-on-surface-variant">2026-10-02 09:41:18 KST</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-space-2xs" id="activeQuestionText">
+            현장 D(김포 공동주택)가 계획보다 지연된 원인과 현재 대응 상황은 무엇인가요?
+          </p>
+</div>
+</div>
+<!-- Grounded AI Answer Card -->
+<div class="bg-surface-card rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg relative overflow-hidden" id="answerContainer">
+<!-- AI Card Top Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-header text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">smart_toy</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">공무 팩트체크 시스템 답변</span>
+<span class="font-body-xs text-body-xs text-on-surface-variant">생성 원칙: 무작위 생성 배제 · ERP 정량 지표 100% 일치 · 기록 텍스트 인용</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-status-normal-bg text-status-normal-text font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-normal-dot"></span>
+              검증 완료
+            </span>
+</div>
+</div>
+<!-- 1. Metadata Baseline Banner -->
+<div class="rounded-lg bg-surface-subtle p-space-md flex flex-wrap items-center justify-between gap-space-sm text-on-surface">
+<div class="flex items-center gap-space-md flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">기준년월:</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">2026년 9월 마감</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">대상 현장:</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">D 김포 공동주택 (수도권 / 공동주택)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">상태 판정:</span>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-status-inspection-bg text-status-inspection-text font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-inspection-dot"></span>
+                점검 대상
+              </span>
+</div>
+</div>
+<div class="font-body-xs text-body-xs text-on-surface-variant">
+            ERP 대장 연동 ID: <span class="font-mono">PRJ-2026-D-09</span>
+</div>
+</div>
+<!-- 2. Program-Verified Numerical Fact Table -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[15px] text-secondary">calculate</span>
+              프로그램 검증 수치 (Fact Table: 계산 날조 차단)
+            </span>
+<span class="font-body-xs text-body-xs text-on-surface-variant">단위: 백만원, %, pp</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-subtle flex flex-col">
+<span class="font-body-xs text-body-xs text-on-surface-variant">계획 공정률</span>
+<span class="font-display-kpi text-[22px] leading-tight text-on-surface font-mono mt-space-2xs">86.5%</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-subtle flex flex-col">
+<span class="font-body-xs text-body-xs text-on-surface-variant">실제 공정률</span>
+<span class="font-display-kpi text-[22px] leading-tight text-on-surface font-mono mt-space-2xs">75.8%</span>
+</div>
+<div class="p-space-sm rounded-lg bg-status-inspection-bg text-status-inspection-text flex flex-col">
+<span class="font-body-xs text-body-xs">공정 차이 (Variance)</span>
+<span class="font-display-kpi text-[22px] leading-tight font-mono mt-space-2xs">-10.7<span class="text-sm">pp</span></span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-subtle flex flex-col">
+<span class="font-body-xs text-body-xs text-on-surface-variant">도급 계약금액</span>
+<span class="font-display-kpi text-[20px] leading-tight text-on-surface font-mono mt-space-2xs">72,000</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-subtle flex flex-col">
+<span class="font-body-xs text-body-xs text-on-surface-variant">누적 기성액</span>
+<span class="font-display-kpi text-[20px] leading-tight text-on-surface font-mono mt-space-2xs">49,968</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-subtle flex flex-col">
+<span class="font-body-xs text-body-xs text-on-surface-variant">누적 기성률</span>
+<span class="font-display-kpi text-[22px] leading-tight text-on-surface font-mono mt-space-2xs">69.4%</span>
+</div>
+</div>
+</div>
+<!-- 3. Qualitative Ground-Truth Split (Recorded vs Planned) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Recorded Situation Card -->
+<div class="rounded-xl p-space-md bg-surface-subtle flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-space-xs font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-error">assignment_late</span>
+                기록된 상황 (현장 지연 사유)
+              </span>
+<span class="font-mono text-body-xs text-on-surface-variant bg-surface-card px-1.5 py-0.5 rounded">field: recorded_situation</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              현장 기록에 따르면, <strong class="font-semibold text-on-surface">레미콘 운송노조 파업 및 7~8월 하절기 집중호우</strong>로 인해 골조공사에서 <span class="bg-status-inspection-bg text-status-inspection-text px-1 rounded font-semibold">18일간 작업 지연</span>이 발생하였으며, 이에 따라 후속 마감공정과의 간섭이 발생한 것으로 기록되어 있습니다.
+            </p>
+<div class="mt-auto pt-space-xs flex items-center gap-space-xs text-status-na-text font-body-xs text-body-xs">
+<span class="material-symbols-outlined text-[15px]">attachment</span>
+<span>출처: 9월 공정보고서 제3장 공정만회 계획 검토의 건</span>
+</div>
+</div>
+<!-- Planned Countermeasure Card -->
+<div class="rounded-xl p-space-md bg-surface-subtle flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-space-xs font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">build_circle</span>
+                계획된 대응 (만회 대책)
+              </span>
+<span class="font-mono text-body-xs text-on-surface-variant bg-surface-card px-1.5 py-0.5 rounded">field: planned_response</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              기록된 대응 계획은 <strong class="font-semibold text-on-surface">외벽 및 마감 공정에 대한 야간 돌관작업 및 타워크레인 1대 추가 투입</strong>을 검토 중이며, 주간 단위 공정 만회 회의를 통해 잔여 공정을 재배치하고 있는 것으로 확인됩니다.
+            </p>
+<div class="mt-auto pt-space-xs flex items-center gap-space-xs text-status-na-text font-body-xs text-body-xs">
+<span class="material-symbols-outlined text-[15px]">event_repeat</span>
+<span>만회 예상 목표: 2026-11월 차이 5.0pp 이내 압축 목표</span>
+</div>
+</div>
+</div>
+<!-- 4. Strict Data Constraint & Fallback Notice (PRD Mandate) -->
+<div class="rounded-xl p-space-md bg-status-caution-bg text-status-caution-text flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-status-caution-dot shrink-0 mt-0.5">policy</span>
+<div class="flex flex-col gap-space-2xs text-body-xs">
+<span class="font-semibold">※ 공무 AI 엄격 안내 원칙 준수 안내</span>
+<p class="leading-relaxed">
+              본 답변은 등록된 월말 기록에 근거하며, 임의로 원인을 확정하거나 완료 사실로 간주하지 않습니다. 계약상 준공예정일(<span class="font-mono font-semibold">2027-04-30</span>) 외의 <strong>실제 준공일</strong>이나 <strong>청구·미수금 내역</strong>은 원본 자료에 포함되어 있지 않아 <span class="px-1.5 py-0.5 rounded bg-status-na-bg text-status-na-text font-semibold">자료 없음</span>으로 분류됩니다.
+            </p>
+</div>
+</div>
+<!-- 5. Metadata Ground-Truth Trail -->
+<div class="flex items-center justify-between flex-wrap gap-space-sm pt-space-xs text-on-surface-variant font-body-xs text-body-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-normal-dot"></span>
+              참고 행: <span class="font-mono font-semibold text-on-surface">Row #124</span>
+</span>
+<span>·</span>
+<span>추출 열: <span class="font-mono text-on-surface">공정차이(var_pct), 기록된 상황(recorded_sit), 대응 계획(plan_resp)</span></span>
+<span>·</span>
+<span>연동 버전: <span class="font-mono text-on-surface">v2026.09.F</span></span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-subtle text-on-surface hover:bg-surface-dim transition-colors font-label-sm text-label-sm" onclick="copyCitation()" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+              인용 복사
+            </button>
+<button class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-subtle text-on-surface hover:bg-surface-dim transition-colors font-label-sm text-label-sm" onclick="openRawModal()" type="button">
+<span class="material-symbols-outlined text-[15px]">table_rows</span>
+              원천 행 보기
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Source Records & Verification Panel (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Ground-Truth Card Mini Preview -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">fact_check</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">연동 레코드 상세 확인</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-subtle font-mono text-label-sm text-on-surface">#Row 124</span>
+</div>
+<div class="flex flex-col gap-space-xs text-body-xs">
+<div class="p-space-sm rounded-lg bg-surface-subtle flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">공종 / 현장명</span>
+<span class="font-semibold text-on-surface">D 김포 공동주택 (1,240세대)</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-subtle flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">원천 입력 공사기간</span>
+<span class="font-mono text-on-surface">2024-03-01 ~ 2027-04-30 (38개월)</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-subtle flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">공정률 차이 판정</span>
+<div class="flex items-center justify-between">
+<span class="font-mono font-semibold text-status-inspection-text">-10.7pp (초과 지연)</span>
+<span class="px-1.5 py-0.5 rounded bg-status-inspection-bg text-status-inspection-text font-label-sm text-label-sm">점검 (≤ -5.0pp)</span>
+</div>
+</div>
+</div>
+<!-- Raw Text Box in Card -->
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">대장 원문 텍스트 (Raw String)</span>
+<div class="p-space-sm rounded-lg bg-surface-subtle font-mono text-body-xs text-on-surface-variant overflow-x-auto whitespace-pre-wrap leading-relaxed select-all">
+"레미콘 운송노조 파업(6/12~6/25) 및 혹서기 집중강우 12일 영향 골조지연 18일 누적. 잔여 외벽/창호/방수공정 긴급돌관 전환 및 크레인 증차 협의중"
+          </div>
+</div>
+<div class="p-space-sm rounded-lg bg-status-na-bg text-status-na-text flex items-center gap-space-xs text-body-xs">
+<span class="material-symbols-outlined text-[16px] text-status-na-dot">info</span>
+<span>미수금 및 실 준공일 필드는 원천 스키마 부재로 시스템 처리 불가 처리됨</span>
+</div>
+</div>
+<!-- Quick Comparison Mini-Widget -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[17px] text-secondary">trending_down</span>
+            지연 순위 비교 (9월 기준)
+          </span>
+<span class="font-body-xs text-body-xs text-on-surface-variant">전체 12개소 중</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Item 1: D -->
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-subtle">
+<div class="flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-status-inspection-bg text-status-inspection-text font-bold text-center text-[11px] leading-5">1</span>
+<span class="font-semibold text-body-xs text-on-surface">D 김포 공동주택</span>
+</div>
+<span class="font-mono text-status-inspection-text font-bold text-body-xs">-10.7pp</span>
+</div>
+<!-- Item 2: H -->
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-subtle">
+<div class="flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-status-inspection-bg text-status-inspection-text font-bold text-center text-[11px] leading-5">2</span>
+<span class="font-semibold text-body-xs text-on-surface">H 대전 복합물류센터</span>
+</div>
+<span class="font-mono text-status-inspection-text font-bold text-body-xs">-6.4pp</span>
+</div>
+<!-- Item 3: B -->
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-subtle">
+<div class="flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-status-caution-bg text-status-caution-text font-bold text-center text-[11px] leading-5">3</span>
+<span class="font-semibold text-body-xs text-on-surface">B 청라 오피스텔</span>
+</div>
+<span class="font-mono text-status-caution-text font-bold text-body-xs">-4.1pp</span>
+</div>
+</div>
+<button class="w-full mt-space-xs py-space-xs text-center rounded bg-surface-subtle hover:bg-surface-dim font-label-sm text-label-sm text-on-surface transition-colors" onclick="loadChip('sep-priority')" type="button">
+          9월 전체 점검 순위 브리핑 열기
+        </button>
+</div>
+<!-- Reliability Guarantee Pill Box -->
+<div class="rounded-xl p-space-md bg-surface-container flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">shield</span>
+          AI 산출물 신뢰도 보증 기준
+        </span>
+<ul class="text-body-xs text-on-surface-variant flex flex-col gap-1 list-disc pl-4">
+<li>계산값은 프로그램 DB 쿼리 결과만 직결</li>
+<li>비정형 텍스트는 원문 요약 및 키워드 추출로 한정</li>
+<li>기성률 = 누적기성액 / 계약금액 (수식 고정)</li>
+<li>누락 지표 요구 시 '자료 없음' 즉시 회신</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Interactive Chat / Prompt Input Bar -->
+<div class="sticky bottom-4 z-40 bg-surface-card rounded-xl p-space-md shadow-xl">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">chat_spark</span>
+<span>현장 데이터 직접 질의</span>
+<span class="text-status-na-dot">|</span>
+<span>범위: 2026-09 마감 144건</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="text-body-xs text-on-surface-variant hover:text-on-surface px-space-xs py-0.5 rounded transition-colors" onclick="resetQuery()" type="button">
+            대화 초기화
+          </button>
+<span class="text-status-na-dot">·</span>
+<button class="text-body-xs text-on-surface-variant hover:text-on-surface px-space-xs py-0.5 rounded transition-colors" onclick="showHelp()" type="button">
+            질의 가이드
+          </button>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span>
+<input class="w-full pl-9 pr-space-md py-2.5 rounded-lg bg-surface-subtle text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:bg-surface-card transition-all" id="userPromptInput" onkeydown="if(event.key==='Enter') executeInquiry()" placeholder="현장 데이터에 대해 질문하세요 (예: 특정 현장의 지연 사유, 공종별 현황, 주의 현장 조치내용)" type="text" value="D 김포 공동주택의 레미콘 파업 지연 이후 공정 만회 가능성은 기록에 나와있나요?"/>
+</div>
+<button class="shrink-0 inline-flex items-center gap-space-xs px-space-lg py-2.5 rounded-lg bg-surface-header text-on-tertiary hover:bg-on-surface-variant font-label-md text-label-md transition-colors shadow-sm" onclick="executeInquiry()" type="button">
+<span>질문 전송</span>
+<span class="material-symbols-outlined text-[17px]">send</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-body-xs text-on-surface-variant pt-space-2xs">
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-normal-dot"></span>
+          시스템 보안: 사내 건설 ERP 전용 보안 파이프라인 가동 중
+        </span>
+<span>단축키: Enter 전송 · Shift+Enter 줄바꿈</span>
+</div>
+</div>
+</div>
+<!-- Source Raw Modal (Hidden by Default) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-surface-header/60 backdrop-blur-sm hidden" id="rawModal">
+<div class="bg-surface-card rounded-xl shadow-2xl w-full max-w-2xl p-space-lg flex flex-col gap-space-md mx-margin">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">database</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">원본 검증 레코드 (Row #124)</h3>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-subtle flex items-center justify-center text-on-surface hover:bg-surface-dim" onclick="closeRawModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm text-body-xs font-mono bg-surface-subtle p-space-md rounded-lg overflow-x-auto max-h-96">
+<div class="grid grid-cols-3 gap-2 py-1">
+<span class="text-on-surface-variant font-sans">site_id</span>
+<span class="col-span-2 text-on-surface font-bold">SITE-2024-D</span>
+</div>
+<div class="grid grid-cols-3 gap-2 py-1">
+<span class="text-on-surface-variant font-sans">site_name</span>
+<span class="col-span-2 text-on-surface">김포 공동주택 현장</span>
+</div>
+<div class="grid grid-cols-3 gap-2 py-1">
+<span class="text-on-surface-variant font-sans">closing_ym</span>
+<span class="col-span-2 text-on-surface">2026-09</span>
+</div>
+<div class="grid grid-cols-3 gap-2 py-1">
+<span class="text-on-surface-variant font-sans">contract_amount</span>
+<span class="col-span-2 text-on-surface">72000000000 (KRW)</span>
+</div>
+<div class="grid grid-cols-3 gap-2 py-1">
+<span class="text-on-surface-variant font-sans">planned_pct</span>
+<span class="col-span-2 text-on-surface">86.50%</span>
+</div>
+<div class="grid grid-cols-3 gap-2 py-1">
+<span class="text-on-surface-variant font-sans">actual_pct</span>
+<span class="col-span-2 text-on-surface">75.80%</span>
+</div>
+<div class="grid grid-cols-3 gap-2 py-1">
+<span class="text-on-surface-variant font-sans">variance_pp</span>
+<span class="col-span-2 text-status-inspection-text font-bold">-10.70pp</span>
+</div>
+<div class="grid grid-cols-3 gap-2 py-1">
+<span class="text-on-surface-variant font-sans">recorded_situation</span>
+<span class="col-span-2 text-on-surface font-sans">레미콘 운송노조 파업 및 7~8월 하절기 집중호우로 인해 골조공사 18일 지연 발생</span>
+</div>
+<div class="grid grid-cols-3 gap-2 py-1">
+<span class="text-on-surface-variant font-sans">planned_response</span>
+<span class="col-span-2 text-on-surface font-sans">외벽/마감 공정 야간 돌관작업 및 타워크레인 1대 추가 투입 검토</span>
+</div>
+<div class="grid grid-cols-3 gap-2 py-1">
+<span class="text-on-surface-variant font-sans">actual_completion_date</span>
+<span class="col-span-2 text-status-na-text font-sans italic">null (미수집: 자료 없음)</span>
+</div>
+<div class="grid grid-cols-3 gap-2 py-1">
+<span class="text-on-surface-variant font-sans">outstanding_receivables</span>
+<span class="col-span-2 text-status-na-text font-sans italic">null (재무 ERP 연동 분리: 자료 없음)</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-xs rounded bg-surface-header text-on-tertiary font-label-md text-label-md" onclick="closeRawModal()" type="button">
+          확인 완료
+        </button>
+</div>
+</div>
+</div>
+<div class="fixed bottom-24 right-8 bg-surface-header text-on-tertiary px-space-md py-space-sm rounded-lg shadow-xl text-body-xs font-medium opacity-0 pointer-events-none transition-all duration-300 z-50 flex items-center gap-space-xs" id="toastMessage">
+<span class="material-symbols-outlined text-[16px] text-status-normal-dot">check</span>
+<span id="toastText">클립보드에 인용 문구가 복사되었습니다.</span>
+</div>
+</div>
+<script>
+  // Scenario Data Store for Interactive Verification
+  const scenarios = {
+    'd-cause': {
+      question: '현장 D(김포 공동주택)가 계획보다 지연된 원인과 현재 대응 상황은 무엇인가요?',
+      siteName: 'D 김포 공동주택 (수도권 / 공동주택)',
+      rowId: 'Row #124',
+      badge: '점검 대상',
+      badgeClass: 'bg-status-inspection-bg text-status-inspection-text',
+      badgeDot: 'bg-status-inspection-dot',
+      planPct: '86.5%',
+      actPct: '75.8%',
+      varPct: '-10.7pp',
+      varClass: 'bg-status-inspection-bg text-status-inspection-text',
+      contractAmt: '72,000',
+      billedAmt: '49,968',
+      billedPct: '69.4%',
+      recorded: '현장 기록에 따르면, 레미콘 운송노조 파업 및 7~8월 하절기 집중호우로 인해 골조공사에서 18일간 작업 지연이 발생하였으며, 이에 따라 후속 마감공정과의 간섭이 발생한 것으로 기록되어 있습니다.',
+      planned: '기록된 대응 계획은 외벽 및 마감 공정에 대한 야간 돌관작업 및 타워크레인 1대 추가 투입을 검토 중이며, 주간 단위 공정 만회 회의를 통해 잔여 공정을 재배치하고 있는 것으로 확인됩니다.',
+      restriction: '※ 본 답변은 등록된 월말 기록에 근거하며, 임의로 원인을 확정하거나 완료 사실로 간주하지 않습니다. 계약상 준공예정일(2027-04-30) 외의 실제 준공일이나 청구·미수금 내역은 원본 자료에 포함되어 있지 않아 \'자료 없음\'으로 분류됩니다.'
+    },
+    'sep-priority': {
+      question: '9월에 공정 지연으로 점검이 필요한 현장 순위와 구체적 원인은 무엇인가요?',
+      siteName: '전체 현장 기준 (점검 대상 2개소 선별)',
+      rowId: 'Row #124, #089',
+      badge: '점검 2건 / 주의 3건',
+      badgeClass: 'bg-status-inspection-bg text-status-inspection-text',
+      badgeDot: 'bg-status-inspection-dot',
+      planPct: '82.1% (평균)',
+      actPct: '74.2% (평균)',
+      varPct: '-7.9pp (평균)',
+      varClass: 'bg-status-inspection-bg text-status-inspection-text',
+      contractAmt: '148,500',
+      billedAmt: '101,230',
+      billedPct: '68.2%',
+      recorded: '1위 현장 D(-10.7pp): 레미콘 수급 파업 및 혹서기 강우로 골조 18일 지연.\\n2위 현장 H 대전 복합물류(-6.4pp): 물류 자동화 설비 랙(Rack) 공급 지연 및 화물용 승강로 구조변경 인허가 지연 21일 발생.',
+      planned: '현장 D: 외벽 마감 돌관작업 및 양중 장비 추가 배치.\\n현장 H: 감리단 협의 후 지상 1층 바닥 배근과 승강로 구조 변경을 병행 시공하여 11월 내 차이 3.0pp 축소 계획.',
+      restriction: '※ 공정차이 ≤ -5.0pp 기준에 해당하는 현장 2곳만 추출되었습니다. 주의(-3.0pp ~ -5.0pp) 현장 3곳(청라 오피스텔 등)의 세부내역은 별도 요청 시 열람 가능합니다.'
+    },
+    'unrecorded-data': {
+      question: '실제 준공일과 미수금 현황은 어떻게 되나요?',
+      siteName: '전체 현장 데이터 검증 요청',
+      rowId: '전체 레코드 스키마 검사',
+      badge: '자료 없음 (누락)',
+      badgeClass: 'bg-status-na-bg text-status-na-text',
+      badgeDot: 'bg-status-na-dot',
+      planPct: '자료 없음',
+      actPct: '자료 없음',
+      varPct: 'N/A',
+      varClass: 'bg-status-na-bg text-status-na-text',
+      contractAmt: '72,000 (참조)',
+      billedAmt: '자료 없음',
+      billedPct: 'N/A',
+      recorded: '【엄격 안내】 현재 연결된 공정·기성 통합 관리 데이터베이스에는 [계약상 준공예정일]만 등록되어 있으며, [실제 준공일] 및 [미수금 잔액] 필드는 존재하지 않습니다.',
+      planned: '시스템은 존재하지 않는 정보를 날조하지 않습니다. 미수금 확인이 필요한 경우 사내 ERP 재무회계 시스템(SAP-FI)의 수금 원장을 조회하여 주시기 바랍니다.',
+      restriction: '※ PRD 기본 원칙: 숫자를 임의 날조하지 않으며, 실제 준공일·미수금처럼 자료에 없는 내용은 엄격히 \'자료 없음\'으로 안내합니다.'
+    },
+    'caution-sites': {
+      question: '주의 현장 3곳의 주요 지연 공종과 현재 상태는?',
+      siteName: '주의 판정군 (B 청라, E 판교, J 광주)',
+      rowId: 'Row #045, #078, #112',
+      badge: '주의 3건',
+      badgeClass: 'bg-status-caution-bg text-status-caution-text',
+      badgeDot: 'bg-status-caution-dot',
+      planPct: '64.8% (평균)',
+      actPct: '61.1% (평균)',
+      varPct: '-3.7pp (평균)',
+      varClass: 'bg-status-caution-bg text-status-caution-text',
+      contractAmt: '112,000',
+      billedAmt: '68,320',
+      billedPct: '61.0%',
+      recorded: '청라 오피스텔(전기/설비 간섭), 판교 복합시설(지하 토공사 암반 파쇄 민원 지연), 광주 지식산업센터(외벽 커튼월 자재 입고 10일 순연)으로 파악되었습니다.',
+      planned: '각 현장 공히 주말 대체 작업 및 골조 선행 공정 분할 투입을 시행 중이며 10월 공정보고에서 주의 해소 가능권으로 평가 중입니다.',
+      restriction: '※ 주의 현장 기준: 공정차이 -3.0pp 초과 -5.0pp 미만 구간 레코드입니다.'
+    }
+  };
+
+  // Switch Active Chip
+  document.querySelectorAll('.question-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.question-chip').forEach(b => {
+        b.classList.remove('active', 'bg-surface-header', 'text-on-tertiary');
+        b.classList.add('bg-surface-card', 'text-on-surface');
+      });
+      btn.classList.add('active', 'bg-surface-header', 'text-on-tertiary');
+      btn.classList.remove('bg-surface-card', 'text-on-surface');
+      loadChip(btn.getAttribute('data-question-id'));
+    });
+  });
+
+  function loadChip(id) {
+    const data = scenarios[id];
+    if (!data) return;
+
+    document.getElementById('activeQuestionText').innerText = data.question;
+    document.getElementById('userPromptInput').value = data.question;
+
+    const container = document.getElementById('answerContainer');
+    container.classList.add('opacity-40');
+
+    setTimeout(() => {
+      renderAnswer(data);
+      container.classList.remove('opacity-40');
+      showToast('검증된 레코드가 성공적으로 로드되었습니다.');
+    }, 180);
+  }
+
+  function renderAnswer(data) {
+    const html = `
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-space-sm">
+          <div class="w-8 h-8 rounded-lg bg-surface-header text-on-tertiary flex items-center justify-center">
+            <span class="material-symbols-outlined text-[18px]">smart_toy</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-headline-sm text-headline-sm text-on-surface">공무 팩트체크 시스템 답변</span>
+            <span class="font-body-xs text-body-xs text-on-surface-variant">생성 원칙: 무작위 생성 배제 · ERP 정량 지표 100% 일치 · 기록 텍스트 인용</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-space-xs">
+          <span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-status-normal-bg text-status-normal-text font-label-sm text-label-sm">
+            <span class="w-1.5 h-1.5 rounded-full bg-status-normal-dot"></span>
+            검증 완료
+          </span>
+        </div>
+      </div>
+
+      <div class="rounded-lg bg-surface-subtle p-space-md flex flex-wrap items-center justify-between gap-space-sm text-on-surface">
+        <div class="flex items-center gap-space-md flex-wrap">
+          <div class="flex items-center gap-space-xs">
+            <span class="font-label-sm text-label-sm text-on-surface-variant">기준년월:</span>
+            <span class="font-label-md text-label-md font-semibold text-on-surface">2026년 9월 마감</span>
+          </div>
+          <div class="flex items-center gap-space-xs">
+            <span class="font-label-sm text-label-sm text-on-surface-variant">대상 범위:</span>
+            <span class="font-label-md text-label-md font-semibold text-on-surface">${data.siteName}</span>
+          </div>
+          <div class="flex items-center gap-space-xs">
+            <span class="font-label-sm text-label-sm text-on-surface-variant">상태 판정:</span>
+            <span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded ${data.badgeClass} font-label-sm text-label-sm font-semibold">
+              <span class="w-1.5 h-1.5 rounded-full ${data.badgeDot}"></span>
+              ${data.badge}
+            </span>
+          </div>
+        </div>
+        <div class="font-body-xs text-body-xs text-on-surface-variant">
+          ERP 대장 식별자: <span class="font-mono">${data.rowId}</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-space-xs">
+        <div class="flex items-center justify-between">
+          <span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-2xs">
+            <span class="material-symbols-outlined text-[15px] text-secondary">calculate</span>
+            프로그램 검증 수치 (Fact Table: 계산 날조 차단)
+          </span>
+          <span class="font-body-xs text-body-xs text-on-surface-variant">단위: 백만원, %, pp</span>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-space-sm">
+          <div class="p-space-sm rounded-lg bg-surface-subtle flex flex-col">
+            <span class="font-body-xs text-body-xs text-on-surface-variant">계획 공정률</span>
+            <span class="font-display-kpi text-[22px] leading-tight text-on-surface font-mono mt-space-2xs">${data.planPct}</span>
+          </div>
+          <div class="p-space-sm rounded-lg bg-surface-subtle flex flex-col">
+            <span class="font-body-xs text-body-xs text-on-surface-variant">실제 공정률</span>
+            <span class="font-display-kpi text-[22px] leading-tight text-on-surface font-mono mt-space-2xs">${data.actPct}</span>
+          </div>
+          <div class="p-space-sm rounded-lg ${data.varClass} flex flex-col">
+            <span class="font-body-xs text-body-xs">공정 차이 (Variance)</span>
+            <span class="font-display-kpi text-[22px] leading-tight font-mono mt-space-2xs">${data.varPct}</span>
+          </div>
+          <div class="p-space-sm rounded-lg bg-surface-subtle flex flex-col">
+            <span class="font-body-xs text-body-xs text-on-surface-variant">도급 계약금액</span>
+            <span class="font-display-kpi text-[20px] leading-tight text-on-surface font-mono mt-space-2xs">${data.contractAmt}</span>
+          </div>
+          <div class="p-space-sm rounded-lg bg-surface-subtle flex flex-col">
+            <span class="font-body-xs text-body-xs text-on-surface-variant">누적 기성액</span>
+            <span class="font-display-kpi text-[20px] leading-tight text-on-surface font-mono mt-space-2xs">${data.billedAmt}</span>
+          </div>
+          <div class="p-space-sm rounded-lg bg-surface-subtle flex flex-col">
+            <span class="font-body-xs text-body-xs text-on-surface-variant">누적 기성률</span>
+            <span class="font-display-kpi text-[22px] leading-tight text-on-surface font-mono mt-space-2xs">${data.billedPct}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+        <div class="rounded-xl p-space-md bg-surface-subtle flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between">
+            <span class="inline-flex items-center gap-space-xs font-label-md text-label-md text-on-surface">
+              <span class="material-symbols-outlined text-[18px] text-error">assignment_late</span>
+              기록된 상황 (근거 텍스트)
+            </span>
+            <span class="font-mono text-body-xs text-on-surface-variant bg-surface-card px-1.5 py-0.5 rounded">field: recorded_situation</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface leading-relaxed whitespace-pre-line">
+            ${data.recorded}
+          </p>
+        </div>
+
+        <div class="rounded-xl p-space-md bg-surface-subtle flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between">
+            <span class="inline-flex items-center gap-space-xs font-label-md text-label-md text-on-surface">
+              <span class="material-symbols-outlined text-[18px] text-secondary">build_circle</span>
+              계획된 대응 (대응 텍스트)
+            </span>
+            <span class="font-mono text-body-xs text-on-surface-variant bg-surface-card px-1.5 py-0.5 rounded">field: planned_response</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface leading-relaxed whitespace-pre-line">
+            ${data.planned}
+          </p>
+        </div>
+      </div>
+
+      <div class="rounded-xl p-space-md bg-status-caution-bg text-status-caution-text flex items-start gap-space-sm">
+        <span class="material-symbols-outlined text-[20px] text-status-caution-dot shrink-0 mt-0.5">policy</span>
+        <div class="flex flex-col gap-space-2xs text-body-xs">
+          <span class="font-semibold">※ 공무 AI 엄격 안내 원칙 준수 안내</span>
+          <p class="leading-relaxed">
+            ${data.restriction}
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between flex-wrap gap-space-sm pt-space-xs text-on-surface-variant font-body-xs text-body-xs">
+        <div class="flex items-center gap-space-sm flex-wrap">
+          <span class="flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-status-normal-dot"></span>
+            참고 행: <span class="font-mono font-semibold text-on-surface">${data.rowId}</span>
+          </span>
+          <span>·</span>
+          <span>추출 열: <span class="font-mono text-on-surface">공정차이, 기록된 상황, 대응 계획</span></span>
+        </div>
+        <div class="flex items-center gap-space-xs">
+          <button type="button" class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-subtle text-on-surface hover:bg-surface-dim transition-colors font-label-sm text-label-sm" onclick="copyCitation()">
+            <span class="material-symbols-outlined text-[15px]">content_copy</span>
+            인용 복사
+          </button>
+          <button type="button" class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-subtle text-on-surface hover:bg-surface-dim transition-colors font-label-sm text-label-sm" onclick="openRawModal()">
+            <span class="material-symbols-outlined text-[15px]">table_rows</span>
+            원천 행 보기
+          </button>
+        </div>
+      </div>
+    `;
+    document.getElementById('answerContainer').innerHTML = html;
+  }
+
+  function executeInquiry() {
+    const val = document.getElementById('userPromptInput').value.trim();
+    if (!val) return;
+    document.getElementById('activeQuestionText').innerText = val;
+
+    if (val.includes('준공') || val.includes('미수금')) {
+      loadChip('unrecorded-data');
+    } else if (val.includes('순위') || val.includes('점검')) {
+      loadChip('sep-priority');
+    } else if (val.includes('주의')) {
+      loadChip('caution-sites');
+    } else {
+      loadChip('d-cause');
+    }
+  }
+
+  function resetQuery() {
+    document.getElementById('userPromptInput').value = '';
+    loadChip('d-cause');
+    showToast('질의 환경이 초기화되었습니다.');
+  }
+
+  function showHelp() {
+    showToast('안내: 공무 AI는 원장 텍스트 인용과 수치 검증에 집중합니다.');
+  }
+
+  function copyCitation() {
+    const question = document.getElementById('activeQuestionText').innerText;
+    navigator.clipboard.writeText(`[CS E&C 공무 AI 인용 보고]\n질문: ${question}\n기준: 2026년 9월 마감 데이터 검증본`);
+    showToast('인용 출처 텍스트가 클립보드에 복사되었습니다.');
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toastMessage');
+    const toastText = document.getElementById('toastText');
+    toastText.innerText = msg;
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0', 'pointer-events-none');
+    }, 2400);
+  }
+
+  function openRawModal() {
+    document.getElementById('rawModal').classList.remove('hidden');
+  }
+
+  function closeRawModal() {
+    document.getElementById('rawModal').classList.add('hidden');
+  }
+</script></div></main><footer class="w-full bg-surface-card border-t border-border-subtle py-space-md"><div class="max-w-[1440px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-xs text-body-xs"><div>© 2026 CS E&amp;C Engineering &amp; Construction HQ. All rights reserved. | 본사 공무팀 공정·기성 통합 관제 시스템</div><div class="flex items-center gap-space-lg"><span class="inline-flex items-center gap-space-2xs"><span class="w-1.5 h-1.5 rounded-full bg-status-normal-dot"></span>ERP 실시간 연동 정상</span><span>기준 데이터: 2026-09-30 마감 확정</span></div></div></footer></body></html>
